@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website Under Maintenance</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+
+            --primary: #d4b472;
+            --secondary: #1E4D45;
+
+            --bg: #f8f5ef;
+
+            --text: #111;
+            --light-text: #666;
+
+            --shadow:
+                0 20px 60px rgba(0, 0, 0, .08);
+
+        }
+
+        * {
+
+            margin: 0;
+            padding: 0;
+
+            box-sizing: border-box;
+
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+
+            background:
+                linear-gradient(rgba(248, 245, 239, .92),
+                    rgba(248, 245, 239, .92)),
+                url("https://images.unsplash.com/photo-1515377905703-c4788e51af15");
+
+            background-size: cover;
+            background-position: center;
+
+            color: var(--text);
+        }
+
+        /* BACK BUTTON */
+
+        .back-btn {
+
+            position: fixed;
+
+            top: 25px;
+            left: 25px;
+
+            width: 55px;
+            height: 55px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: var(--primary);
+
+            color: white;
+
+            cursor: pointer;
+
+            font-size: 18px;
+
+            transition: .3s;
+        }
+
+        .back-btn:hover {
+
+            transform: translateY(-3px);
+        }
+
+        /* CARD */
+
+        .maintenance-card {
+
+            width: 100%;
+            max-width: 850px;
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, .88);
+
+            backdrop-filter: blur(18px);
+
+            border-radius: 40px;
+
+            padding: 70px 50px;
+
+            box-shadow: var(--shadow);
+        }
+
+        /* ICON */
+
+        .maintenance-icon {
+
+            width: 140px;
+            height: 140px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: rgba(212, 180, 114, .15);
+
+            color: var(--primary);
+
+            font-size: 60px;
+
+            animation: spin 8s linear infinite;
+        }
+
+        @keyframes spin {
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        h1 {
+
+            font-family: 'Cormorant Garamond', serif;
+
+            font-size: 72px;
+
+            margin-top: 30px;
+
+            color: var(--secondary);
+        }
+
+        h2 {
+
+            margin-top: 10px;
+
+            font-size: 28px;
+
+            font-weight: 600;
+        }
+
+        p {
+
+            max-width: 650px;
+
+            margin: 20px auto;
+
+            line-height: 1.9;
+
+            color: var(--light-text);
+        }
+
+        /* BUTTONS */
+
+        .actions {
+
+            margin-top: 40px;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        .btn {
+
+            padding: 16px 30px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            cursor: pointer;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            transition: .3s;
+
+            text-decoration: none;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+        }
+
+        .home-btn {
+
+            background: linear-gradient(135deg,
+                    #d4b472,
+                    #e7c98d);
+
+            color: #111;
+        }
+
+        .refresh-btn {
+
+            background: white;
+
+            color: #111;
+        }
+
+        .btn:hover {
+
+            transform: translateY(-4px);
+        }
+
+        /* STATUS */
+
+        .status {
+
+            margin-top: 35px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 10px 18px;
+
+            border-radius: 50px;
+
+            background: rgba(30, 77, 69, .08);
+
+            color: var(--secondary);
+
+            font-weight: 600;
+        }
+
+        .status-dot {
+
+            width: 10px;
+            height: 10px;
+
+            border-radius: 50%;
+
+            background: #1E4D45;
+
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.4);
+                opacity: .5;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+        }
+
+        /* DARK MODE */
+
+        body.dark-mode {
+
+            background:
+                linear-gradient(rgba(10, 10, 10, .94),
+                    rgba(10, 10, 10, .94)),
+                url("https://images.unsplash.com/photo-1515377905703-c4788e51af15");
+
+            color: white;
+        }
+
+        body.dark-mode .maintenance-card {
+
+            background: rgba(20, 20, 20, .9);
+        }
+
+        body.dark-mode h1 {
+
+            color: var(--primary);
+        }
+
+        body.dark-mode p {
+
+            color: #cfcfcf;
+        }
+
+        body.dark-mode .refresh-btn {
+
+            background: #252525;
+
+            color: white;
+        }
+
+        @media(max-width:768px) {
+
+            .maintenance-card {
+
+                padding: 40px 25px;
+            }
+
+            h1 {
+
+                font-size: 52px;
+            }
+
+            h2 {
+
+                font-size: 22px;
+            }
+
+            .actions {
+
+                flex-direction: column;
+            }
+
+            .btn {
+
+                width: 100%;
+
+                justify-content: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="maintenance-card">
+
+        <div class="maintenance-icon">
+
+            <i class="fa-solid fa-gears"></i>
+
+        </div>
+
+        <h1>Bloom</h1>
+
+        <h2>We're Under Maintenance</h2>
+
+        <p>
+            We're currently improving your experience.
+            Our website is undergoing scheduled maintenance
+            and will be back online shortly.
+            Thank you for your patience and support.
+        </p>
+
+        <div class="status">
+
+            <span class="status-dot"></span>
+
+            Maintenance In Progress
+
+        </div>
+
+        <div class="actions">
+
+            <a href="indexb.html" class="btn home-btn">
+
+                <i class="fa-solid fa-house"></i>
+
+                Return Home
+
+            </a>
+
+            <button class="btn refresh-btn" onclick="location.reload()">
+
+                <i class="fa-solid fa-rotate-right"></i>
+
+                Refresh Page
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        if (
+            localStorage.getItem("darkMode")
+            === "enabled"
+        ) {
+
+            document.body.classList.add(
+                "dark-mode"
+            );
+
+        }
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

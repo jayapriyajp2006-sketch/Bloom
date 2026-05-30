@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terms & Conditions</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        /* ===================================
+ROOT
+=================================== */
+
+        :root {
+
+            --bg: #f7f4ef;
+            --card: #ffffff;
+
+            --text: #111;
+            --light: #666;
+
+            --primary: #1E4D45;
+            --gold: #c8a96b;
+
+            --shadow:
+                0 15px 45px rgba(0, 0, 0, .08);
+        }
+
+        /* ===================================
+GLOBAL
+=================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+
+            background:
+                linear-gradient(rgba(247, 244, 239, .92),
+                    rgba(247, 244, 239, .92)),
+
+                url("https://i.pinimg.com/1200x/38/24/34/382434f5f6836b54865b318787d50171.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            min-height: 100vh;
+
+            color: var(--text);
+        }
+
+        /* ===================================
+BACK BUTTON
+=================================== */
+
+        .top-back-btn {
+
+            position: fixed;
+
+            top: 30px;
+            left: 30px;
+
+            width: 58px;
+            height: 58px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: white;
+
+            color: var(--primary);
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+
+            z-index: 999;
+
+            transition: .3s;
+        }
+
+        .top-back-btn:hover {
+
+            background: var(--primary);
+
+            color: white;
+
+            transform: translateY(-4px);
+        }
+
+        /* ===================================
+CONTAINER
+=================================== */
+
+        .container {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 120px 20px 80px;
+        }
+
+        /* ===================================
+CARD
+=================================== */
+
+        .terms-card {
+
+            background: rgba(255, 255, 255, .85);
+
+            backdrop-filter: blur(18px);
+
+            border-radius: 40px;
+
+            padding: 60px;
+
+            box-shadow: var(--shadow);
+        }
+
+        .terms-title {
+
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .terms-title h1 {
+
+            font-size: 72px;
+
+            color: var(--primary);
+
+            font-family: 'Cormorant Garamond', serif;
+
+            margin-bottom: 15px;
+        }
+
+        .terms-title p {
+
+            color: var(--light);
+
+            font-size: 16px;
+        }
+
+        /* ===================================
+CONTENT
+=================================== */
+
+        .section {
+
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+
+            color: var(--primary);
+
+            margin-bottom: 12px;
+
+            font-size: 24px;
+        }
+
+        .section p {
+
+            color: var(--light);
+
+            line-height: 1.9;
+
+            font-size: 15px;
+        }
+
+        /* ===================================
+BUTTONS
+=================================== */
+
+        .action-buttons {
+
+            margin-top: 50px;
+
+            display: flex;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        .agree-btn {
+
+            flex: 1;
+
+            min-width: 250px;
+
+            padding: 18px;
+
+            border: none;
+
+            border-radius: 60px;
+
+            background:
+                linear-gradient(135deg,
+                    #1E4D45,
+                    #2f7a6d);
+
+            color: white;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 15px 35px rgba(30, 77, 69, .25);
+
+            transition: .35s;
+        }
+
+        .agree-btn:hover {
+
+            transform: translateY(-4px);
+        }
+
+        .deny-btn {
+
+            flex: 1;
+
+            min-width: 250px;
+
+            padding: 18px;
+
+            border: none;
+
+            border-radius: 60px;
+
+            background: white;
+
+            color: #111;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            border: 1px solid rgba(0, 0, 0, .08);
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, .08);
+
+            transition: .35s;
+        }
+
+        .deny-btn:hover {
+
+            background: #d4b06a;
+
+            color: white;
+
+            transform: translateY(-4px);
+        }
+
+        /* ===================================
+MOBILE
+=================================== */
+
+        @media(max-width:768px) {
+
+            .terms-card {
+
+                padding: 35px;
+            }
+
+            .terms-title h1 {
+
+                font-size: 48px;
+            }
+
+            .action-buttons {
+
+                flex-direction: column;
+            }
+
+            .agree-btn,
+            .deny-btn {
+
+                width: 100%;
+            }
+
+            .top-back-btn {
+
+                width: 50px;
+                height: 50px;
+
+                top: 20px;
+                left: 20px;
+            }
+        }
+
+        body.dark-mode {
+
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+
+                url("https://i.pinimg.com/1200x/38/24/34/382434f5f6836b54865b318787d50171.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button class="top-back-btn" onclick="history.back()">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+    </button>
+
+    <div class="container">
+
+        <div class="terms-card">
+
+            <div class="terms-title">
+
+                <h1>Terms & Conditions</h1>
+
+                <p>
+                    Please read these terms carefully before using our website.
+                </p>
+
+            </div>
+
+            <div class="section">
+                <h2>1. Acceptance of Terms</h2>
+                <p>
+                    By accessing or using this website, you agree to comply
+                    with and be bound by these Terms and Conditions.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>2. Product Information</h2>
+                <p>
+                    We strive to ensure all product details, descriptions,
+                    pricing, and images are accurate. Minor variations may occur.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>3. Orders & Payments</h2>
+                <p>
+                    All orders are subject to acceptance and availability.
+                    We reserve the right to refuse or cancel any order.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>4. Shipping Policy</h2>
+                <p>
+                    Delivery times are estimates and may vary depending
+                    on location, courier services, and unforeseen events.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>5. Returns & Refunds</h2>
+                <p>
+                    Eligible returns must be made within the return period.
+                    Returned items must be unused and in original packaging.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>6. Privacy Policy</h2>
+                <p>
+                    Customer information is protected and processed securely.
+                    We never sell personal information to third parties.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>7. Intellectual Property</h2>
+                <p>
+                    All website content including images, logos, graphics,
+                    and text remain the property of the company.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>8. Limitation of Liability</h2>
+                <p>
+                    We shall not be liable for indirect or consequential
+                    damages resulting from the use of our website or products.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>9. Account Responsibility</h2>
+                <p>
+                    You are responsible for maintaining the confidentiality
+                    of your account credentials and activities.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>10. Changes To Terms</h2>
+                <p>
+                    We reserve the right to update these Terms & Conditions
+                    at any time without prior notice.
+                </p>
+            </div>
+
+            <div class="action-buttons">
+
+                <button class="agree-btn" onclick="agreeTerms()">
+
+                    <i class="fa-solid fa-check"></i>
+                    &nbsp;
+                    I Agree & Continue
+
+                </button>
+
+                <button class="deny-btn" onclick="denyTerms()">
+
+                    <i class="fa-solid fa-xmark"></i>
+                    &nbsp;
+                    I Do Not Agree
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function agreeTerms() {
+
+            localStorage.setItem(
+                "termsAccepted",
+                "true"
+            );
+
+            history.back();
+        }
+
+        function denyTerms() {
+
+            localStorage.removeItem(
+                "termsAccepted"
+            );
+
+            history.back();
+        }
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

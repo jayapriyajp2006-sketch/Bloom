@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frequently Asked Questions</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        :root {
+            --primary: #1E4D45;
+            --gold: #c8a96b;
+            --text: #111;
+            --light: #666;
+            --shadow: 0 15px 45px rgba(0, 0, 0, .08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+
+            background:
+                linear-gradient(rgba(247, 244, 239, .92),
+                    rgba(247, 244, 239, .92)),
+
+                url("https://i.pinimg.com/1200x/38/24/34/382434f5f6836b54865b318787d50171.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            min-height: 100vh;
+        }
+
+        /* BACK BUTTON */
+
+        .top-back-btn {
+
+            position: fixed;
+
+            top: 30px;
+            left: 30px;
+
+            width: 58px;
+            height: 58px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: white;
+
+            color: var(--primary);
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+
+            z-index: 999;
+
+            transition: .3s;
+        }
+
+        .top-back-btn:hover {
+
+            background: var(--primary);
+
+            color: white;
+
+            transform: translateY(-4px);
+        }
+
+        /* CONTAINER */
+
+        .container {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            padding: 120px 20px 80px;
+        }
+
+        /* CARD */
+
+        .faq-card {
+
+            background: rgba(255, 255, 255, .88);
+
+            backdrop-filter: blur(18px);
+
+            border-radius: 40px;
+
+            padding: 60px;
+
+            box-shadow: var(--shadow);
+        }
+
+        .title {
+
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .title h1 {
+
+            font-size: 72px;
+
+            color: var(--primary);
+
+            font-family: 'Cormorant Garamond', serif;
+
+            margin-bottom: 10px;
+        }
+
+        .title p {
+
+            color: var(--light);
+        }
+
+        /* FAQ */
+
+        .faq-item {
+
+            background: white;
+
+            border-radius: 22px;
+
+            margin-bottom: 18px;
+
+            overflow: hidden;
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .05);
+        }
+
+        .faq-question {
+
+            width: 100%;
+
+            border: none;
+
+            background: none;
+
+            padding: 24px;
+
+            font-size: 17px;
+
+            font-weight: 600;
+
+            color: var(--primary);
+
+            cursor: pointer;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            text-align: left;
+        }
+
+        .faq-question i {
+
+            transition: .3s;
+        }
+
+        .faq-answer {
+
+            max-height: 0;
+
+            overflow: hidden;
+
+            transition: .35s ease;
+
+            padding: 0 24px;
+        }
+
+        .faq-answer p {
+
+            color: var(--light);
+
+            line-height: 1.9;
+
+            padding-bottom: 24px;
+        }
+
+        .faq-item.active .faq-answer {
+
+            max-height: 250px;
+        }
+
+        .faq-item.active .faq-question i {
+
+            transform: rotate(180deg);
+        }
+
+        /* CONTACT BUTTON */
+
+        .contact-btn {
+
+            width: 100%;
+
+            margin-top: 40px;
+
+            padding: 18px;
+
+            border: none;
+
+            border-radius: 60px;
+
+            background:
+                linear-gradient(135deg,
+                    #1E4D45,
+                    #2f7a6d);
+
+            color: white;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: .3s;
+        }
+
+        .contact-btn:hover {
+
+            transform: translateY(-4px);
+        }
+
+        /* MOBILE */
+
+        @media(max-width:768px) {
+
+            .faq-card {
+                padding: 35px;
+            }
+
+            .title h1 {
+                font-size: 48px;
+            }
+
+            .top-back-btn {
+                width: 50px;
+                height: 50px;
+                top: 20px;
+                left: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button class="top-back-btn" onclick="history.back()">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+    </button>
+
+    <div class="container">
+
+        <div class="faq-card">
+
+            <div class="title">
+
+                <h1>FAQ</h1>
+
+                <p>
+                    Frequently Asked Questions About Our Products & Services
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How long does shipping take?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Orders are usually delivered within 3–7 business days depending on your location.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I return a product?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. Unused products can be returned according to our return policy.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Are your skincare products cruelty-free?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. We do not test our products on animals and work with ethical suppliers.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you offer international shipping?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. International shipping is available for selected countries.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How can I track my order?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Once shipped, you'll receive a tracking number by email.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What payment methods do you accept?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We accept major credit cards, debit cards, UPI, PayPal and other secure payment options.</p>
+                </div>
+            </div>
+
+            <button class="contact-btn" onclick="location.href='contactb.html'">
+
+                <i class="fa-solid fa-headset"></i>
+                &nbsp;
+                Still Need Help? Contact Support
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const faqItems =
+            document.querySelectorAll(".faq-item");
+
+        faqItems.forEach(item => {
+
+            const btn =
+                item.querySelector(".faq-question");
+
+            btn.addEventListener("click", () => {
+
+                item.classList.toggle("active");
+
+            });
+
+        });
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

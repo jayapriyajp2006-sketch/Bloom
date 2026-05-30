@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Skincare</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <div class="logo">
+            Bloom
+        </div>
+
+        <nav id="navbar">
+            <a href="indexb.html" class="active">Home</a>
+            <a href="index2b.html">Home 2</a>
+            <a href="shop.html">Shop</a>
+            <a href="aboutusb.html">About Us</a>
+            <a href="blogb.html">Blog</a>
+            <a href="contactb.html">Contact</a>
+        </nav>
+
+        <div class="nav-icons">
+            <!-- DESKTOP SEARCH -->
+
+            <div class="search-box desktop-search">
+
+                <input type="text" id="searchInput" placeholder="Search products...">
+
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <!-- MOBILE SEARCH ICON -->
+
+            <button class="mobile-search-btn" id="mobileSearchBtn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <!-- DARK MODE BUTTON -->
+
+            <button id="darkModeBtn" class="dark-mode-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <!-- HAMBURGER -->
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+
+
+
+    </header>
+    <!-- ===================================
+MOBILE SEARCH POPUP
+=================================== -->
+
+    <div class="mobile-search-popup" id="mobileSearchPopup">
+
+        <div class="mobile-search-content">
+
+            <input type="text" id="mobileSearchInput" placeholder="Search products...">
+
+            <button id="mobileSearchSubmit">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+    <!-- HERO SECTION -->
+
+    <section class="hero-section">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="hero-content">
+
+            <span>HANDCRAFTED • ORGANIC • LUXURY</span>
+
+            <h1>
+                Skincare <br>
+                Rooted In Nature
+            </h1>
+
+            <p>
+                Discover botanical skincare products crafted with
+                pure ingredients for naturally glowing healthy skin.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="shop.html" class="hero-btn primary-btn">
+                    Shop Now
+                </a>
+
+                <a href="aboutusb.html" class="hero-btn secondary-btn">
+                    Explore More
+                </a>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories">
+
+        <div class="section-title">
+            <h2>Shop By Category</h2>
+        </div>
+
+        <div class="category-grid">
+
+
+            <div class="category-card">
+
+                <img src="https://i.pinimg.com/736x/82/22/59/8222596d01f5bd27b533eabe72a880e1.jpg" alt="Handmade Soap">
+                <div class="category-content">
+
+                    <h3>Handmade Soaps</h3>
+
+                    <a href="shop.html">Shop Now →</a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="category-card">
+
+                <img src="https://bettersheabutter.com/app/uploads/2023/10/PeppermintBB_Styled-14-600x600.jpg"
+                    alt="Body Butter">
+
+                <div class="category-content">
+
+                    <h3>Body Butter</h3>
+
+                    <a href="shop.html">Shop Now →</a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 3 -->
+
+            <div class="category-card">
+
+                <img src="https://cba-production-v2.s3.amazonaws.com/products/labels/pennylanefacialserumoil.jpeg"
+                    alt="Serum">
+
+                <div class="category-content">
+
+                    <h3>Face Serums</h3>
+
+                    <a href="shop.html">Shop Now →</a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 4 -->
+
+            <div class="category-card">
+
+                <img src="https://www.makkhahealthandspa.com/wp-content/uploads/2024/08/An-assortment-of-organic-essential-oils-for-massage.jpg"
+                    alt="Oil">
+
+                <div class="category-content">
+
+                    <h3>Essential Oils</h3>
+
+                    <a href="shop.html">Shop Now →</a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ULTRA PREMIUM PRODUCTS SECTION -->
+
+    <section class="luxury-products">
+
+        <div class="luxury-title">
+
+            <span>Luxury Apothecary</span>
+
+            <h2>Best Sellers</h2>
+
+        </div>
+
+
+
+        <div class="luxury-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="luxury-card">
+
+                <div class="luxury-image">
+
+                    <img src="https://i.pinimg.com/736x/5c/e8/5d/5ce85d244551a34b161442dec550d9e7.jpg" alt="">
+
+                    <div class="overlay"></div>
+
+                    <span class="luxury-badge">NEW</span>
+
+                </div>
+
+                <div class="luxury-content">
+
+                    <h3>Glow Serum</h3>
+
+                    <p>
+                        Brightening botanical serum infused with vitamin oils.
+                    </p>
+
+                    <div class="luxury-bottom">
+
+                        <h4>₹299</h4>
+
+                        <button onclick="window.location.href='shop.html'">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 2 -->
+
+            <div class="luxury-card">
+
+                <div class="luxury-image">
+
+                    <img src="https://i.pinimg.com/736x/15/1d/4a/151d4aa6b5e73faaa7766b97046aa438.jpg" alt="">
+
+                    <div class="overlay"></div>
+
+                    <span class="luxury-badge">BEST</span>
+
+                </div>
+
+                <div class="luxury-content">
+
+                    <h3>Body Butter</h3>
+
+                    <p>
+                        Rich whipped butter with deep hydration benefits.
+                    </p>
+
+                    <div class="luxury-bottom">
+
+                        <h4>₹499</h4>
+
+                        <button onclick="window.location.href='shop.html'">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 3 -->
+
+            <div class="luxury-card">
+
+                <div class="luxury-image">
+
+                    <img src="https://i.pinimg.com/736x/83/60/d1/8360d11a90cd378394e339845aff6d7f.jpg" alt="">
+
+                    <div class="overlay"></div>
+
+                    <span class="luxury-badge">PURE</span>
+
+                </div>
+
+                <div class="luxury-content">
+
+                    <h3>Charcoal Soap</h3>
+
+                    <p>
+                        Detoxifying handcrafted soap with activated charcoal.
+                    </p>
+
+                    <div class="luxury-bottom">
+
+                        <h4>₹199</h4>
+
+                        <button onclick="window.location.href='shop.html'">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 4 -->
+
+            <div class="luxury-card">
+
+                <div class="luxury-image">
+
+                    <img src="https://i.pinimg.com/736x/da/4a/d8/da4ad8d7c7ee3d81eb4bf26e3f1403c7.jpg" alt="">
+
+                    <div class="overlay"></div>
+
+                    <span class="luxury-badge">LUXE</span>
+
+                </div>
+
+                <div class="luxury-content">
+
+                    <h3>Skin Oil</h3>
+
+                    <p>
+                        Lightweight luxury oil for silky glowing skin.
+                    </p>
+
+                    <div class="luxury-bottom">
+
+                        <h4>₹399</h4>
+
+                        <button onclick="window.location.href='shop.html'">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT / INTRO -->
+
+    <section class="about-section">
+
+        <div class="about-image">
+            <img src="https://i.pinimg.com/1200x/56/99/fe/5699fe2584e0d8b4153f49b47d20b45c.jpg">
+        </div>
+
+        <div class="about-content">
+
+            <span>ABOUT BLOOM</span>
+
+            <h2>Pure Skincare Inspired By Nature</h2>
+
+            <p>
+                Bloom creates handmade skincare products using natural botanical
+                ingredients crafted for healthy glowing skin and self-care rituals.
+            </p>
+
+            <a href="aboutusb.html" class="primary-btn">Learn More</a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SERVICES OVERVIEW -->
+
+    <section class="services-section">
+
+        <div class="section-title">
+
+            <span>OUR SERVICES</span>
+
+            <h2>What We Offer</h2>
+
+        </div>
+
+        <div class="services-grid">
+
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-spa"></i>
+
+                <h3>Organic Skincare</h3>
+
+                <p>Natural skincare crafted with pure ingredients.</p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-gift"></i>
+
+                <h3>Gift Packages</h3>
+
+                <p>Luxury skincare gift boxes for every occasion.</p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <h3>Fast Delivery</h3>
+
+                <p>Quick and secure shipping for all orders.</p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-leaf"></i>
+
+                <h3>Eco Friendly</h3>
+
+                <p>Sustainable packaging and cruelty-free products.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- WHY CHOOSE US - ORGANIC STYLE -->
+
+    <section class="organic-section">
+
+        <div class="organic-title">
+
+            <span>Why Choose Our Product</span>
+
+            <h2>ORGANIC STORE</h2>
+
+        </div>
+
+
+        <div class="organic-container">
+
+
+            <!-- LEFT FEATURES -->
+
+            <div class="organic-side">
+
+
+                <div class="organic-box">
+
+                    <div class="organic-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <h3>WHO ARE WE</h3>
+
+                    <p>
+                        Organic skincare crafted naturally with botanical ingredients
+                        and sustainable care.
+                    </p>
+
+                </div>
+
+
+
+                <div class="organic-box">
+
+                    <div class="organic-icon">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+
+                    <h3>HOW WE WORK</h3>
+
+                    <p>
+                        Handmade small-batch skincare designed for healthy glowing skin.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- CENTER -->
+
+            <div class="organic-center">
+
+                <div class="center-card">
+
+                    <h3>OUR STORY</h3>
+
+                    <p>
+                        Organic products are grown under environmentally and socially
+                        responsible practices with pure natural ingredients.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- RIGHT FEATURES -->
+
+            <div class="organic-side">
+
+
+                <div class="organic-box">
+
+                    <div class="organic-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+
+                    <h3>QUALITY PRODUCTS</h3>
+
+                    <p>
+                        Premium skincare products made with safe and effective formulas.
+                    </p>
+
+                </div>
+
+
+
+                <div class="organic-box">
+
+                    <div class="organic-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+
+                    <h3>100% ORGANIC</h3>
+
+                    <p>
+                        Free from harsh chemicals, parabens, and artificial ingredients.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TESTIMONIAL SECTION -->
+
+    <section class="testimonial-section">
+
+        <div class="section-title">
+
+            <span>CLIENT LOVE</span>
+
+            <h2>Loved By Our Customers</h2>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="testimonial-card">
+
+
+                <div class="testimonial-top">
+
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+                    <div class="testimonial-info">
+
+                        <h3>Emily Rose</h3>
+
+                        <span>Verified Customer</span>
+
+                    </div>
+
+                </div>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    My skin feels softer and healthier after using Bloom products.
+                    The handmade soaps smell amazing and feel luxurious.
+                </p>
+
+            </div>
+
+
+
+            <!-- CARD 2 -->
+
+            <div class="testimonial-card">
+
+
+
+                <div class="testimonial-top">
+
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg">
+
+                    <div class="testimonial-info">
+
+                        <h3>Sarah Lee</h3>
+
+                        <span>Skincare Lover</span>
+
+                    </div>
+
+                </div>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Pure ingredients, elegant packaging, and incredible results.
+                    I absolutely love the facial serum collection.
+                </p>
+
+            </div>
+
+
+
+            <!-- CARD 3 -->
+
+            <div class="testimonial-card">
+
+
+
+                <div class="testimonial-top">
+
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+                    <div class="testimonial-info">
+
+                        <h3>Daniel James</h3>
+
+                        <span>Organic Product User</span>
+
+                    </div>
+
+                </div>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    The charcoal soap is my favorite product. Clean design,
+                    natural ingredients, and premium quality skincare.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <!-- CALL TO ACTION -->
+
+    <section class="cta-section">
+
+        <div class="cta-content">
+
+            <span>SELF CARE STARTS TODAY</span>
+
+            <h2>Discover Your Natural Glow</h2>
+
+            <p>
+                Explore our handmade skincare collections and elevate your daily routine.
+            </p>
+
+            <a href="shop.html" class="secondary-btn">Shop Collection</a>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ===================================
+     FOOTER
+=================================== -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <!-- FOOTER ABOUT -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+                    Bloom
+                </div>
+
+                <p>
+                    Handcrafted skincare inspired by nature.
+                    Made with pure ingredients for a healthy,
+                    glowing you.
+                </p>
+
+                <div class="footer-social">
+
+                    <!-- INSTAGRAM -->
+
+                    <a href="https://instagram.com">
+
+                        <i class="ri-instagram-line"></i>
+
+                    </a>
+
+                    <!-- FACEBOOK -->
+
+                    <a href="https://facebook.com">
+
+                        <i class="ri-facebook-line"></i>
+
+                    </a>
+
+                    <!-- PINTEREST -->
+
+                    <a href="https://pinterest.com">
+
+                        <i class="ri-pinterest-line"></i>
+
+                    </a>
+
+                    <!-- TIKTOK -->
+
+                    <a href="https://tiktok.com">
+
+                        <i class="ri-tiktok-line"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- SHOP -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="indexb.html">Home</a>
+                <a href="index2b.html">Home 2</a>
+                <a href="shop.html">Shop</a>
+                <a href="aboutusb.html">About Us</a>
+                <a href="blogb.html">Blog</a>
+                <a href="contactb.html">Contact</a>
+
+
+
+            </div>
+
+            <!-- COMPANY -->
+
+            <div class="footer-box">
+
+                <h3>Support</h3>
+
+                <a href="faqb.html">FAQs</a>
+                <a href="privacypolicy.html">Privacy & Policy</a>
+                <a href="terms&con.html">Teams & conditions</a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="ri-mail-line"></i>
+                    bloom@gmail.com
+                </p>
+
+                <p>
+                    <i class="ri-phone-line"></i>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    <i class="ri-map-pin-line"></i>
+                    Chennai, Tamil Nadu
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Bloom Skincare.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

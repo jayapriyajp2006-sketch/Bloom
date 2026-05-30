@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 - Page Not Found</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+
+            --primary-color: #1E4D45;
+            --secondary-color: #d4b472;
+
+            --bg-color: #f8f5ef;
+            --card-bg: rgba(255, 255, 255, .88);
+
+            --text-color: #111;
+            --light-text: #666;
+
+            --shadow:
+                0 20px 60px rgba(0, 0, 0, .08);
+
+        }
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        body {
+
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+
+            background:
+                linear-gradient(rgba(248, 245, 239, .95),
+                    rgba(248, 245, 239, .95)),
+                url("https://images.unsplash.com/photo-1515377905703-c4788e51af15");
+
+            background-size: cover;
+            background-position: center;
+
+            color: var(--text-color);
+
+        }
+
+        .back-btn {
+
+            position: fixed;
+
+            top: 25px;
+            left: 25px;
+
+            width: 55px;
+            height: 55px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: var(--primary-color);
+
+            color: white;
+
+            cursor: pointer;
+
+            font-size: 18px;
+
+            transition: .3s;
+
+            z-index: 100;
+        }
+
+        .back-btn:hover {
+
+            transform: translateY(-3px);
+
+        }
+
+        .error-card {
+
+            width: 100%;
+            max-width: 800px;
+
+            background: var(--card-bg);
+
+            backdrop-filter: blur(18px);
+
+            border-radius: 40px;
+
+            padding: 70px 50px;
+
+            text-align: center;
+
+            box-shadow: var(--shadow);
+
+        }
+
+        .error-code {
+
+            font-size: 150px;
+
+            line-height: 1;
+
+            font-family: 'Cormorant Garamond', serif;
+
+            color: var(--primary-color);
+
+        }
+
+        .error-title {
+
+            font-size: 42px;
+
+            margin-top: 10px;
+            margin-bottom: 15px;
+
+            font-family: 'Cormorant Garamond', serif;
+
+        }
+
+        .error-text {
+
+            color: var(--light-text);
+
+            max-width: 550px;
+
+            margin: auto;
+
+            line-height: 1.9;
+
+        }
+
+        .buttons {
+
+            margin-top: 40px;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+
+        }
+
+        .btn {
+
+            padding: 16px 30px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            cursor: pointer;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            transition: .3s;
+
+            text-decoration: none;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+        }
+
+        .home-btn {
+
+            background: var(--primary-color);
+
+            color: white;
+
+        }
+
+        .home-btn:hover {
+
+            transform: translateY(-3px);
+
+        }
+
+        .back-home {
+
+            background: white;
+
+            color: var(--text-color);
+
+        }
+
+        .back-home:hover {
+
+            transform: translateY(-3px);
+
+        }
+
+        /* DARK MODE */
+
+        body.dark-mode {
+
+            background:
+                linear-gradient(rgba(10, 10, 10, .95),
+                    rgba(10, 10, 10, .95)),
+                url("https://images.unsplash.com/photo-1515377905703-c4788e51af15");
+
+            color: white;
+
+        }
+
+        body.dark-mode .error-card {
+
+            background: rgba(22, 22, 22, .9);
+
+        }
+
+        body.dark-mode .error-text {
+
+            color: #bdbdbd;
+
+        }
+
+        body.dark-mode .back-home {
+
+            background: #252525;
+
+            color: white;
+
+        }
+
+        @media(max-width:768px) {
+
+            .error-card {
+
+                padding: 40px 25px;
+
+            }
+
+            .error-code {
+
+                font-size: 100px;
+
+            }
+
+            .error-title {
+
+                font-size: 32px;
+
+            }
+
+            .buttons {
+
+                flex-direction: column;
+
+            }
+
+            .btn {
+
+                width: 100%;
+
+                justify-content: center;
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="error-card">
+
+        <div class="error-code">404</div>
+
+        <h1 class="error-title">
+            Oops! Page Not Found
+        </h1>
+
+        <p class="error-text">
+            The page you're looking for doesn't exist,
+            may have been moved, or the link is incorrect.
+            Let's get you back to Bloom Skincare.
+        </p>
+
+        <div class="buttons">
+
+            <a href="indexb.html" class="btn home-btn">
+
+                <i class="fa-solid fa-house"></i>
+
+                Go To Home
+
+            </a>
+
+            <button onclick="history.back()" class="btn back-home">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Previous Page
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        /* LOAD SAVED DARK MODE */
+
+        if (
+            localStorage.getItem("darkMode")
+            === "enabled"
+        ) {
+
+            document.body.classList.add(
+                "dark-mode"
+            );
+
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

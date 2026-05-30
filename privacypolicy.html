@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        /* ===================================
+ROOT
+=================================== */
+
+        :root {
+
+            --bg: #f7f4ef;
+            --card: #ffffff;
+
+            --text: #111;
+            --light: #666;
+
+            --primary: #1E4D45;
+            --gold: #c8a96b;
+
+            --shadow:
+                0 15px 45px rgba(0, 0, 0, .08);
+        }
+
+        /* ===================================
+GLOBAL
+=================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+
+            background:
+                linear-gradient(rgba(247, 244, 239, .92),
+                    rgba(247, 244, 239, .92)),
+
+                url("https://i.pinimg.com/1200x/38/24/34/382434f5f6836b54865b318787d50171.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            min-height: 100vh;
+
+            color: var(--text);
+        }
+
+        /* ===================================
+BACK BUTTON
+=================================== */
+
+        .top-back-btn {
+
+            position: fixed;
+
+            top: 30px;
+            left: 30px;
+
+            width: 58px;
+            height: 58px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: white;
+
+            color: var(--primary);
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+
+            z-index: 999;
+
+            transition: .3s;
+        }
+
+        .top-back-btn:hover {
+
+            background: var(--primary);
+
+            color: white;
+
+            transform: translateY(-4px);
+        }
+
+        /* ===================================
+CONTAINER
+=================================== */
+
+        .container {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 120px 20px 80px;
+        }
+
+        /* ===================================
+CARD
+=================================== */
+
+        .policy-card {
+
+            background: rgba(255, 255, 255, .85);
+
+            backdrop-filter: blur(18px);
+
+            border-radius: 40px;
+
+            padding: 60px;
+
+            box-shadow: var(--shadow);
+        }
+
+        .policy-title {
+
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .policy-title h1 {
+
+            font-size: 72px;
+
+            color: var(--primary);
+
+            font-family: 'Cormorant Garamond', serif;
+
+            margin-bottom: 15px;
+        }
+
+        .policy-title p {
+
+            color: var(--light);
+
+            font-size: 16px;
+        }
+
+        /* ===================================
+CONTENT
+=================================== */
+
+        .section {
+
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+
+            color: var(--primary);
+
+            margin-bottom: 12px;
+
+            font-size: 24px;
+        }
+
+        .section p {
+
+            color: var(--light);
+
+            line-height: 1.9;
+
+            font-size: 15px;
+        }
+
+        /* ===================================
+BUTTONS
+=================================== */
+
+        .action-buttons {
+
+            margin-top: 50px;
+
+            display: flex;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+        }
+
+        .agree-btn {
+
+            flex: 1;
+
+            min-width: 250px;
+
+            padding: 18px;
+
+            border: none;
+
+            border-radius: 60px;
+
+            background:
+                linear-gradient(135deg,
+                    #1E4D45,
+                    #2f7a6d);
+
+            color: white;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 15px 35px rgba(30, 77, 69, .25);
+
+            transition: .35s;
+        }
+
+        .agree-btn:hover {
+
+            transform: translateY(-4px);
+        }
+
+        .deny-btn {
+
+            flex: 1;
+
+            min-width: 250px;
+
+            padding: 18px;
+
+            border: none;
+
+            border-radius: 60px;
+
+            background: white;
+
+            color: #111;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            border: 1px solid rgba(0, 0, 0, .08);
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, .08);
+
+            transition: .35s;
+        }
+
+        .deny-btn:hover {
+
+            background: #d4b06a;
+
+            color: white;
+
+            transform: translateY(-4px);
+        }
+
+        /* ===================================
+MOBILE
+=================================== */
+
+        @media(max-width:768px) {
+
+            .policy-card {
+                padding: 35px;
+            }
+
+            .policy-title h1 {
+                font-size: 48px;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .agree-btn,
+            .deny-btn {
+                width: 100%;
+            }
+
+            .top-back-btn {
+                width: 50px;
+                height: 50px;
+
+                top: 20px;
+                left: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button class="top-back-btn" onclick="history.back()">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+    </button>
+
+    <div class="container">
+
+        <div class="policy-card">
+
+            <div class="policy-title">
+
+                <h1>Privacy Policy</h1>
+
+                <p>
+                    Learn how we collect, use, store and protect your personal information.
+                </p>
+
+            </div>
+
+            <div class="section">
+                <h2>1. Information We Collect</h2>
+                <p>We collect information you provide when creating an account, placing orders, subscribing to
+                    newsletters, or contacting support.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Personal Details</h2>
+                <p>This may include your name, email address, phone number, billing address, shipping address, and
+                    account information.</p>
+            </div>
+
+            <div class="section">
+                <h2>3. Payment Information</h2>
+                <p>Payments are processed through secure payment gateways. We do not store complete credit card
+                    information.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. How We Use Information</h2>
+                <p>Your information helps us process orders, improve services, provide support, and personalize your
+                    shopping experience.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Marketing Communications</h2>
+                <p>With your permission, we may send promotional emails, exclusive offers, and product updates.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Cookies</h2>
+                <p>Cookies help us remember preferences, analyze website traffic, and improve website performance.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Shipping & Fulfillment</h2>
+                <p>Your information may be shared with shipping providers and logistics partners solely for order
+                    fulfillment.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Data Protection</h2>
+                <p>We use industry-standard security measures to safeguard your personal information against
+                    unauthorized access.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Third-Party Services</h2>
+                <p>Our website may contain links to third-party websites. We are not responsible for their privacy
+                    practices.</p>
+            </div>
+
+            <div class="section">
+                <h2>10. Your Privacy Rights</h2>
+                <p>You may request access, correction, or deletion of your personal data where permitted by applicable
+                    law.</p>
+            </div>
+
+            <div class="section">
+                <h2>11. Children's Privacy</h2>
+                <p>Our services are not intended for children under 13 years of age, and we do not knowingly collect
+                    such information.</p>
+            </div>
+
+            <div class="section">
+                <h2>12. International Data Transfers</h2>
+                <p>Your information may be transferred and processed in countries outside your place of residence where
+                    permitted by law.</p>
+            </div>
+
+            <div class="section">
+                <h2>13. Policy Updates</h2>
+                <p>We may update this Privacy Policy periodically. Continued use of the website indicates acceptance of
+                    any updates.</p>
+            </div>
+
+            <div class="section">
+                <h2>14. Contact Information</h2>
+                <p>If you have questions regarding this Privacy Policy, please contact our support team for assistance.
+                </p>
+            </div>
+
+            <div class="action-buttons">
+
+                <button class="agree-btn" onclick="agreePrivacy()">
+
+                    <i class="fa-solid fa-check"></i>
+                    &nbsp;
+                    I Accept Privacy Policy
+
+                </button>
+
+                <button class="deny-btn" onclick="denyPrivacy()">
+
+                    <i class="fa-solid fa-xmark"></i>
+                    &nbsp;
+                    I Do Not Accept
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function agreePrivacy() {
+
+            localStorage.setItem(
+                "privacyAccepted",
+                "true"
+            );
+
+            history.back();
+        }
+
+        function denyPrivacy() {
+
+            localStorage.removeItem(
+                "privacyAccepted"
+            );
+
+            history.back();
+        }
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

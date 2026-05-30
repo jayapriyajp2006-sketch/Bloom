@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Skincare</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <div class="logo">
+            Bloom
+        </div>
+
+        <nav id="navbar">
+            <a href="indexb.html">Home</a>
+            <a href="index2b.html">Home 2</a>
+            <a href="shop.html">Shop</a>
+            <a href="aboutusb.html">About Us</a>
+            <a href="blogb.html" class="active">Blog</a>
+            <a href="contactb.html">Contact</a>
+        </nav>
+
+        <div class="nav-icons">
+            <!-- DESKTOP SEARCH -->
+
+            <div class="search-box desktop-search">
+
+                <input type="text" id="searchInput" placeholder="Search products...">
+
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <!-- MOBILE SEARCH ICON -->
+
+            <button class="mobile-search-btn" id="mobileSearchBtn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <!-- DARK MODE BUTTON -->
+
+            <button id="darkModeBtn" class="dark-mode-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <!-- HAMBURGER -->
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+
+
+
+    </header>
+    <!-- ===================================
+MOBILE SEARCH POPUP
+=================================== -->
+
+    <div class="mobile-search-popup" id="mobileSearchPopup">
+
+        <div class="mobile-search-content">
+
+            <input type="text" id="mobileSearchInput" placeholder="Search products...">
+
+            <button id="mobileSearchSubmit">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================
+         BLOG HERO
+    ==================================== -->
+
+    <section class="blog-hero">
+
+        <div class="blog-hero-content">
+
+            <span>OUR BLOG</span>
+
+            <h1>
+                Stories for <br>
+                Natural Living
+            </h1>
+
+            <div class="line"></div>
+
+            <p>
+                Tips, rituals, and inspiration to help
+                you take better care of your skin
+                and the planet.
+            </p>
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- ===================================
+         FEATURED BLOGS
+    ==================================== -->
+
+    <section class="featured-blogs">
+
+        <div class="section-title">
+
+            <span>FEATURED ARTICLES</span>
+
+            <h2>Editor's Picks</h2>
+
+        </div>
+
+        <div class="blog-grid">
+
+            <div class="blog-card">
+
+                <img src="https://i.pinimg.com/1200x/c2/07/e8/c207e80a42f680d0f322c09d2d09a5c8.jpg" alt="Blog">
+
+                <div class="blog-content">
+
+                    <div class="blog-meta" style="color: white;">
+
+                        <span>SKINCARE TIPS</span>
+
+                        <span>•</span>
+
+                        <span>MAY 12, 2024</span>
+
+                    </div>
+
+                    <h3>
+                        5 Simple Steps to Build
+                        Your Skincare Routine
+                    </h3>
+
+                    <p>
+                        A beginner-friendly guide to healthy,
+                        glowing skin using natural products.
+                    </p>
+                    <a href="blogdeatilb.html?title=5 Simple Steps to Build Your Skincare Routine
+&category=SKINCARE TIPS
+&date=MAY 12, 2024
+&image=https://i.pinimg.com/1200x/c2/07/e8/c207e80a42f680d0f322c09d2d09a5c8.jpg
+&desc=A beginner-friendly guide to healthy glowing skin using natural products." class="read-more-btn">
+
+                        Read More
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="blog-card">
+
+                <img src="https://i.pinimg.com/736x/a7/e7/7f/a7e77f27cf57416428f44a51063a8c62.jpg" alt="Blog">
+
+                <div class="blog-content">
+
+                    <div class="blog-meta" style="color: white;">
+
+                        <span>INGREDIENTS</span>
+
+                        <span>•</span>
+
+                        <span>APR 28, 2024</span>
+
+                    </div>
+
+                    <h3>
+                        The Benefits of Shea Butter
+                        for Your Skin
+                    </h3>
+
+                    <p>
+                        Discover why shea butter is one
+                        of the best natural moisturizers.
+                    </p>
+
+                    <a href="blogdeatilb.html?title=The Benefits of Shea Butter for Your Skin
+&category=INGREDIENTS
+&date=APR 28, 2024
+&image=https://i.pinimg.com/736x/a7/e7/7f/a7e77f27cf57416428f44a51063a8c62.jpg
+&desc=Discover why shea butter is one of the best natural moisturizers." class="read-more-btn">
+
+                        Read More
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================================
+         FILTER SECTION
+    ==================================== -->
+
+    <!-- ===================================
+     FILTER SECTION
+=================================== -->
+
+    <section class="blog-filter-section">
+
+        <div class="blog-top-bar">
+
+            <!-- FILTER BUTTONS -->
+            <div class="blog-filters">
+
+
+                <button class="active" data-filter="all">ALL</button>
+
+                <button data-filter="skincare">SKINCARE</button>
+
+                <button data-filter="ingredients">INGREDIENTS</button>
+
+                <button data-filter="wellness">WELLNESS</button>
+
+                <button data-filter="sustainability">SUSTAINABILITY</button>
+
+            </div>
+
+            <!-- SEARCH -->
+            <div class="blog-search-box">
+
+                <input type="text" placeholder="Search blog...">
+
+                <i class="ri-search-line"></i>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================================
+         BLOG SECTION
+    ==================================== -->
+
+    <section class="blog-section">
+
+        <div class="blog-grid">
+
+
+            <!-- BLOG CARD -->
+
+            <div class="blog-card wellness">
+
+                <img src="https://i.pinimg.com/736x/e1/6a/70/e16a704434e1d568f60c6bb259450ddc.jpg" alt="Blog">
+
+                <div class="blog-content">
+
+                    <div class="blog-meta" style="color: white;">
+
+                        <span>WELLNESS</span>
+
+                        <span>•</span>
+
+                        <span>APR 10, 2024</span>
+
+                    </div>
+
+                    <h3>
+                        Create a Relaxing
+                        Self-Care Ritual
+                    </h3>
+
+                    <p>
+                        Easy ways to slow down and
+                        care for your body and mind.
+                    </p>
+
+                    <a href="blogdeatilb.html?title=Create a Relaxing Self-Care Ritual
+&category=WELLNESS
+&date=APR 10, 2024
+&image=https://i.pinimg.com/736x/e1/6a/70/e16a704434e1d568f60c6bb259450ddc.jpg
+&desc=Easy ways to slow down and care for your body and mind." class="read-more-btn">
+
+                        Read More
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="blog-card sustainability">
+
+                <img src="https://i.pinimg.com/1200x/75/ce/4a/75ce4a48e81d3e39be0f35d3897af424.jpg" alt="Blog">
+
+                <div class="blog-content">
+
+                    <div class="blog-meta" style="color: white;">
+
+                        <span>SUSTAINABILITY</span>
+
+                        <span>•</span>
+
+                        <span>MAR 25, 2024</span>
+
+                    </div>
+
+                    <h3>
+                        How We Handcraft
+                        Our Soaps
+                    </h3>
+
+                    <p>
+                        Take a look behind the scenes
+                        of our soap making process.
+                    </p>
+
+                    <a href="blogdeatilb.html?title=How We Handcraft Our Soaps
+&category=SUSTAINABILITY
+&date=MAR 25, 2024
+&image=https://i.pinimg.com/1200x/75/ce/4a/75ce4a48e81d3e39be0f35d3897af424.jpg
+&desc=Take a look behind the scenes of our soap making process." class="read-more-btn">
+
+                        Read More
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+                </div>
+
+            </div>
+
+
+
+            <div class="blog-card sustainability">
+
+                <img src="https://i.pinimg.com/736x/51/f5/f4/51f5f4d6c636c385762c2d5308e89d16.jpg" alt="Blog">
+
+                <div class="blog-content">
+
+                    <div class="blog-meta" style="color: white;">
+
+                        <span>SUSTAINABILITY</span>
+
+                        <span>•</span>
+
+                        <span>MAR 05, 2024</span>
+
+                    </div>
+
+                    <h3>
+                        Our Commitment to
+                        a Greener Planet
+                    </h3>
+
+                    <p>
+                        Sustainable choices we make
+                        every day for cleaner beauty.
+                    </p>
+
+                    <a href="blogdeatilb.html?title=Our Commitment to a Greener Planet
+&category=SUSTAINABILITY
+&date=MAR 05, 2024
+&image=https://i.pinimg.com/736x/51/f5/f4/51f5f4d6c636c385762c2d5308e89d16.jpg
+&desc=Sustainable choices we make every day for cleaner beauty." class="read-more-btn">
+
+                        Read More
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="blog-card ingredients">
+
+
+                <img src="https://i.pinimg.com/736x/cd/e6/b2/cde6b22e5a11df6ec2af8c3a30462c34.jpg" alt="Blog">
+
+                <div class="blog-content">
+
+                    <div class="blog-meta" style="color: white;">
+
+                        <span>INGREDIENTS</span>
+
+                        <span>•</span>
+
+                        <span>FEB 18, 2024</span>
+
+                    </div>
+
+                    <h3>
+                        Why Botanical Oils Matter
+                    </h3>
+
+                    <p>
+                        Learn how natural oils transform
+                        your skincare routine beautifully.
+                    </p>
+
+                    <a href="blogdeatilb.html?title=Why Botanical Oils Matter
+&category=INGREDIENTS
+&date=FEB 18, 2024
+&image=https://i.pinimg.com/736x/cd/e6/b2/cde6b22e5a11df6ec2af8c3a30462c34.jpg
+&desc=Learn how natural oils transform your skincare routine beautifully." class="read-more-btn">
+
+                        Read More
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="blog-card skincare">
+
+                <img src="https://i.pinimg.com/736x/6d/3d/6d/6d3d6d5c6eb28ba8bec16ff7331ed4e4.jpg" alt="Blog">
+
+                <div class="blog-content">
+
+                    <div class="blog-meta" style="color: white;">
+
+                        <span>SKINCARE</span>
+
+                        <span>•</span>
+
+                        <span>JAN 10, 2024</span>
+
+                    </div>
+
+                    <h3>
+                        Night Routine for
+                        Healthy Skin
+                    </h3>
+
+                    <p>
+                        Build an easy nighttime skincare
+                        ritual for glowing skin.
+                    </p>
+
+                    <a href="blogdeatilb.html?title=Night Routine for Healthy Skin
+&category=SKINCARE
+&date=JAN 10, 2024
+&image=https://i.pinimg.com/736x/6d/3d/6d/6d3d6d5c6eb28ba8bec16ff7331ed4e4.jpg
+&desc=Build an easy nighttime skincare ritual for glowing skin." class="read-more-btn">
+
+                        Read More
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="blog-card wellness">
+
+                <img src="https://i.pinimg.com/1200x/d4/ee/26/d4ee260cfaa1d94d0fbe04f4f30d7242.jpg" alt="Blog">
+
+                <div class="blog-content">
+
+                    <div class="blog-meta" style="color: white;">
+
+                        <span>WELLNESS</span>
+
+                        <span>•</span>
+
+                        <span>DEC 22, 2023</span>
+
+                    </div>
+
+                    <h3>
+                        Daily Habits for
+                        Better Wellness
+                    </h3>
+
+                    <p>
+                        Small healthy routines that
+                        improve your everyday life.
+                    </p>
+
+                    <a href="blogdeatilb.html?title=Daily Habits for Better Wellness
+&category=WELLNESS
+&date=DEC 22, 2023
+&image=https://i.pinimg.com/1200x/d4/ee/26/d4ee260cfaa1d94d0fbe04f4f30d7242.jpg
+&desc=Small healthy routines that improve your everyday life." class="read-more-btn">
+
+                        Read More
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================================
+         NEWSLETTER
+    ==================================== -->
+
+    <section class="newsletter">
+
+        <h2>Join our newsletter</h2>
+
+        <p>
+            Get skincare tips, updates,
+            and exclusive offers.
+        </p>
+
+        <div class="newsletter-box">
+
+            <input type="email" placeholder="Enter your email">
+
+            <button>
+                Subscribe
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================================
+     FOOTER
+=================================== -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <!-- FOOTER ABOUT -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+                    Bloom
+                </div>
+
+                <p>
+                    Handcrafted skincare inspired by nature.
+                    Made with pure ingredients for a healthy,
+                    glowing you.
+                </p>
+                <div class="footer-social">
+
+                    <!-- INSTAGRAM -->
+
+                    <a href="https://instagram.com">
+
+                        <i class="ri-instagram-line"></i>
+
+                    </a>
+
+                    <!-- FACEBOOK -->
+
+                    <a href="https://facebook.com">
+
+                        <i class="ri-facebook-line"></i>
+
+                    </a>
+
+                    <!-- PINTEREST -->
+
+                    <a href="https://pinterest.com">
+
+                        <i class="ri-pinterest-line"></i>
+
+                    </a>
+
+                    <!-- TIKTOK -->
+
+                    <a href="https://tiktok.com">
+
+                        <i class="ri-tiktok-line"></i>
+
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- SHOP -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="indexb.html">Home</a>
+                <a href="index2b.html">Home 2</a>
+                <a href="shop.html">Shop</a>
+                <a href="aboutusb.html">About Us</a>
+                <a href="blogb.html">Blog</a>
+                <a href="contactb.html">Contact</a>
+
+
+
+            </div>
+
+            <!-- COMPANY -->
+
+            <div class="footer-box">
+
+                <h3>Support</h3>
+
+                <a href="faqb.html">FAQs</a>
+                <a href="privacypolicy.html">Privacy & Policy</a>
+                <a href="terms&con.html">Teams & conditions</a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="ri-mail-line"></i>
+                    bloom@gmail.com
+                </p>
+
+                <p>
+                    <i class="ri-phone-line"></i>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    <i class="ri-map-pin-line"></i>
+                    Chennai, Tamil Nadu
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Bloom Skincare.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
