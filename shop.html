@@ -708,57 +708,163 @@
         background: #181818;
     }
 
+    .sizes button.active-size {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
+    }
+
+    body.dark-mode .sizes button.active-size {
+        background: #9caf88;
+        color: #111;
+        border-color: #9caf88;
+    }
+
     /* ===================================
-        MOBILE
-        =================================== */
+   MOBILE PRODUCT MODAL FIX
+   =================================== */
+    @media (max-width: 991px) {
 
-    @media(max-width:991px) {
-
-        .shop-section,
-        .modal-box {
-
+        .shop-section {
             grid-template-columns: 1fr;
         }
 
         .sidebar {
-
             position: relative;
             top: 0;
         }
 
-        .modal-content h1 {
+    }
 
-            font-size: 52px;
+    @media (max-width: 480px) {
+
+        .modal-content {
+            padding: 20px;
+        }
+
+        .modal-content h1 {
+            font-size: 30px;
+        }
+
+        .price {
+            font-size: 24px;
+        }
+
+        .sizes button {
+            width: 100%;
+            flex: unset;
+        }
+
+        .cart-btn {
+            padding: 16px;
         }
 
     }
 
-    .shop-hero {
+    @media (max-width: 768px) {
 
-        padding: 140px 5% 80px;
-    }
+        .product-modal {
+            align-items: center;
+            padding: 10px;
+            overflow: hidden;
+            /* remove outer scrollbar */
+        }
 
-    .hero-content h1 {
 
-        font-size: 54px;
-    }
+        .modal-box {
+            grid-template-columns: 1fr;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            /* only this scrolls */
+            border-radius: 25px;
+            margin-top: 0;
+        }
 
-    .shop-section {
+        .modal-box::-webkit-scrollbar {
+            width: 0;
+        }
 
-        padding: 70px 5%;
-    }
+        .modal-box {
+            scrollbar-width: none;
+        }
 
-    .modal-content {
+        .modal-image {
+            height: 250px;
+        }
 
-        padding: 45px 25px;
-    }
+        .modal-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    .modal-content h1 {
+        .modal-content {
+            padding: 25px;
+        }
 
-        font-size: 42px;
+        .modal-content h1 {
+            font-size: 36px;
+            line-height: 1.1;
+            margin: 15px 0;
+        }
+
+        .modal-content p {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .price {
+            font-size: 28px;
+        }
+
+        .sizes {
+            gap: 10px;
+        }
+
+        .sizes button {
+            flex: 1;
+            min-width: 80px;
+            padding: 12px;
+        }
+
+        .quantity {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .quantity button {
+            width: 42px;
+            height: 42px;
+        }
+
+        .quantity input {
+            width: 60px;
+        }
+
+        .modal-buttons {
+            flex-direction: column;
+        }
+
+        .cart-btn {
+            width: 100%;
+        }
+
+        .wish-btn {
+            width: 100%;
+            height: 55px;
+            border-radius: 15px;
+        }
+
+        .close-modal {
+            top: 12px;
+            right: 12px;
+            width: 40px;
+            height: 40px;
+            z-index: 10;
+        }
     }
 </style>
-
 </head>
 
 <body>
@@ -1594,8 +1700,8 @@ MOBILE SEARCH POPUP
             btn.addEventListener("click", () => {
 
                 const product = products[index];
-
                 modal.classList.add("active");
+                document.body.style.overflow = "hidden";
 
                 modalImage.src = product.image;
 
@@ -1631,6 +1737,7 @@ MOBILE SEARCH POPUP
         closeModal.addEventListener("click", () => {
 
             modal.classList.remove("active");
+            document.body.style.overflow = "";
 
         });
 
@@ -1639,6 +1746,7 @@ MOBILE SEARCH POPUP
             if (e.target === modal) {
 
                 modal.classList.remove("active");
+                document.body.style.overflow = "";
 
             }
 
