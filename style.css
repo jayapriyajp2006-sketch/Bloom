@@ -5436,7 +5436,6 @@ MOBILE SEARCH ICON
 
     display: none;
 
-    background: transparent;
 
     border: none;
 
@@ -5824,4 +5823,40 @@ body.dark-mode h4 {
     color: white;
 
     cursor: pointer;
+}
+
+/* Search Icon Button */
+.search-box button,
+.mobile-search-btn {
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+    color: inherit;
+}
+
+/* Remove hover background too */
+.search-box button:hover,
+.mobile-search-btn:hover {
+    background: transparent !important;
+}
+
+/* Search icon */
+.search-box button i,
+.mobile-search-btn i {
+    background: transparent !important;
+}
+
+/* Hide scrollbar but keep scrolling */
+html,
+body {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
 }
