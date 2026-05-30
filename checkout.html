@@ -602,9 +602,63 @@ BACK BUTTON
             color: var(--light-text);
         }
 
-        /* ===================================
-TABLET RESPONSIVE
-=================================== */
+        .backs-btn {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            background: #f3f4f6;
+            color: #1E4D45;
+
+            border: none;
+            border-radius: 50px;
+
+            padding: 16px 28px;
+
+            font-size: 15px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: .3s ease;
+
+            min-width: 140px;
+
+            box-shadow:
+                0 4px 12px rgba(0, 0, 0, .06);
+        }
+
+        .backs-btn:hover {
+
+            background: #1E4D45;
+            color: #fff;
+
+            transform: translateY(-2px);
+        }
+
+        .backs-btn i {
+
+            font-size: 14px;
+        }
+
+        .checkout-buttons {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 20px;
+
+            margin-top: 30px;
+        }
+
+        .next-btn {
+
+            min-width: 240px;
+        }
+
 
         @media (max-width: 991px) {
 
@@ -693,6 +747,7 @@ TABLET RESPONSIVE
             }
 
         }
+
 
         /* ===================================
 MOBILE RESPONSIVE
@@ -832,22 +887,20 @@ MOBILE RESPONSIVE
                 font-size: 13px;
             }
 
+
             .checkout-buttons {
-
-                flex-direction: column;
-
-                gap: 14px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 15px;
             }
 
-            .next-btn,
-            .back-btn,
-            .place-order-btn {
+            .back-btn {
+                min-width: 120px;
+            }
 
-                width: 100%;
-
-                padding: 16px;
-
-                font-size: 15px;
+            .next-btn {
+                min-width: 220px;
             }
 
             .checkout-right h2 {
@@ -934,6 +987,27 @@ MOBILE RESPONSIVE
                 gap: 28px;
             }
 
+            .checkout-buttons {
+
+                display: flex;
+                gap: 12px;
+            }
+
+            .back-btn {
+
+                flex: 0 0 110px;
+                min-width: 110px;
+
+                padding: 14px 0;
+
+                font-size: 14px;
+            }
+
+            .next-btn {
+
+                flex: 1;
+                min-width: auto;
+            }
         }
 
         /* ===================================
@@ -1106,12 +1180,10 @@ SMALL MOBILE
 
                 <div class="checkout-buttons">
 
-                    <button class="back-btn" onclick="prevStep(1)">
 
+                    <button class="backs-btn" onclick="prevStep(1)">
                         Back
-
                     </button>
-
                     <button class="next-btn" onclick="nextStep(3)">
 
                         Continue To Payment
@@ -1154,8 +1226,7 @@ SMALL MOBILE
                 </div>
 
                 <div class="checkout-buttons">
-
-                    <button class="back-btn" onclick="prevStep(2)">
+                    <button class="backs-btn" onclick="prevStep(2)">
                         Back
                     </button>
 
@@ -1603,7 +1674,7 @@ SMALL MOBILE
 
         function goHome() {
 
-            window.location.href = "indexb.html";
+            window.location.href = "index.html";
 
         }
 
