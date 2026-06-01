@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Website Under Maintenance</title>
-    <link rel="stylesheet" href="style.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
         rel="stylesheet">
@@ -297,38 +297,158 @@
 
         }
 
-        /* DARK MODE */
+        /* ===================================
+LUXURY MAINTENANCE DARK MODE
+=================================== */
 
         body.dark-mode {
 
             background:
-                linear-gradient(rgba(10, 10, 10, .94),
-                    rgba(10, 10, 10, .94)),
+
+                linear-gradient(rgba(10, 12, 16, .72),
+                    rgba(10, 12, 16, .72)),
+
                 url("https://images.unsplash.com/photo-1515377905703-c4788e51af15");
 
-            color: white;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            color: #f5f5f5;
         }
+
+        /* CARD */
 
         body.dark-mode .maintenance-card {
 
-            background: rgba(20, 20, 20, .9);
+            background: rgba(20, 24, 30, .82);
+
+            backdrop-filter: blur(20px);
+
+            border: 1px solid rgba(212, 175, 55, .12);
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, .45);
         }
+
+        /* BRAND NAME */
 
         body.dark-mode h1 {
 
-            color: var(--primary);
+            color: #4b9387;
+
+            text-shadow:
+                0 0 25px rgba(212, 175, 55, .15);
         }
+
+        /* SUBTITLE */
+
+        body.dark-mode h2 {
+
+            color: #ffffff;
+        }
+
+        /* DESCRIPTION */
 
         body.dark-mode p {
 
-            color: #cfcfcf;
+            color: #d0d0d0;
         }
+
+        /* MAINTENANCE ICON */
+
+        body.dark-mode .maintenance-icon {
+
+            background:
+                rgba(212, 175, 55, .12);
+
+            color: #4b9387;
+
+            border: 1px solid rgba(212, 175, 55, .15);
+
+            box-shadow:
+                0 0 40px rgba(212, 175, 55, .08);
+        }
+
+        /* STATUS BADGE */
+
+        body.dark-mode .status {
+
+            background:
+                rgba(212, 175, 55, .08);
+
+            color: #4b9387;
+
+            border: 1px solid rgba(212, 175, 55, .12);
+        }
+
+        body.dark-mode .status-dot {
+
+            background: #4b9387;
+        }
+
+        /* HOME BUTTON */
+
+        body.dark-mode .home-btn {
+
+            background:
+                linear-gradient(135deg,
+                    #2d7065,
+                    #50827a);
+
+            color: #111;
+
+            box-shadow:
+                0 15px 35px rgba(212, 175, 55, .25);
+        }
+
+        body.dark-mode .home-btn:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 20px 45px rgba(212, 175, 55, .35);
+        }
+
+        /* REFRESH BUTTON */
 
         body.dark-mode .refresh-btn {
 
-            background: #252525;
+            background: #232831;
 
-            color: white;
+            color: #f5f5f5;
+
+            border: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        body.dark-mode .refresh-btn:hover {
+
+            background: #2f3641;
+        }
+
+        /* GOLD AMBIENT GLOW */
+
+        body.dark-mode::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: -1;
+
+            background:
+
+                radial-gradient(circle at 15% 15%,
+                    rgba(212, 175, 55, .08),
+                    transparent 25%),
+
+                radial-gradient(circle at 85% 75%,
+                    rgba(212, 175, 55, .05),
+                    transparent 30%);
         }
 
         @media(max-width:768px) {
