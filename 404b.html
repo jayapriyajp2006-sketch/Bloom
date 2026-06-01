@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 - Page Not Found</title>
+    <!-- CSS -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+
+            --primary-color: #1E4D45;
+            --secondary-color: #d4b472;
+
+            --bg-color: #f8f5ef;
+            --card-bg: rgba(255, 255, 255, .88);
+
+            --text-color: #111;
+            --light-text: #666;
+
+            --shadow:
+                0 20px 60px rgba(0, 0, 0, .08);
+
+        }
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        body {
+
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+
+            background:
+                linear-gradient(rgba(248, 245, 239, .95),
+                    rgba(248, 245, 239, .95)),
+                url("https://images.unsplash.com/photo-1515377905703-c4788e51af15");
+
+            background-size: cover;
+            background-position: center;
+
+            color: var(--text-color);
+
+        }
+
+        .back-btn {
+
+            position: fixed;
+
+            top: 25px;
+            left: 25px;
+
+            width: 55px;
+            height: 55px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: var(--primary-color);
+
+            color: white;
+
+            cursor: pointer;
+
+            font-size: 18px;
+
+            transition: .3s;
+
+            z-index: 100;
+        }
+
+        .back-btn:hover {
+
+            transform: translateY(-3px);
+
+        }
+
+        .error-card {
+
+            width: 100%;
+            max-width: 800px;
+
+            background: var(--card-bg);
+
+            backdrop-filter: blur(18px);
+
+            border-radius: 40px;
+
+            padding: 70px 50px;
+
+            text-align: center;
+
+            box-shadow: var(--shadow);
+
+        }
+
+        .error-code {
+
+            font-size: 150px;
+
+            line-height: 1;
+
+            font-family: 'Cormorant Garamond', serif;
+
+            color: var(--primary-color);
+
+        }
+
+        .error-title {
+
+            font-size: 42px;
+
+            margin-top: 10px;
+            margin-bottom: 15px;
+
+            font-family: 'Cormorant Garamond', serif;
+
+        }
+
+        .error-text {
+
+            color: var(--light-text);
+
+            max-width: 550px;
+
+            margin: auto;
+
+            line-height: 1.9;
+
+        }
+
+        .buttons {
+
+            margin-top: 40px;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+
+        }
+
+        .btn {
+
+            padding: 16px 30px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            cursor: pointer;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            transition: .3s;
+
+            text-decoration: none;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+        }
+
+        .home-btn {
+
+            background: var(--primary-color);
+
+            color: white;
+
+        }
+
+        .home-btn:hover {
+
+            transform: translateY(-3px);
+
+        }
+
+        .back-home {
+
+            background: white;
+
+            color: var(--text-color);
+
+        }
+
+        .back-home:hover {
+
+            transform: translateY(-3px);
+
+        }
+
+        /* ===================================
+LUXURY 404 DARK MODE
+=================================== */
+
+        body.dark-mode {
+
+            background:
+
+                linear-gradient(rgba(10, 12, 16, .72),
+                    rgba(10, 12, 16, .72)),
+
+                url("https://images.unsplash.com/photo-1515377905703-c4788e51af15");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            color: #f5f5f5;
+        }
+
+        /* CARD */
+
+        body.dark-mode .error-card {
+
+            background: rgba(20, 24, 30, .82);
+
+            backdrop-filter: blur(20px);
+
+            border: 1px solid rgba(212, 175, 55, .12);
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, .45);
+        }
+
+        /* 404 NUMBER */
+
+        body.dark-mode .error-code {
+
+            color: #4b9387;
+
+            text-shadow:
+                0 0 30px rgba(212, 175, 55, .15);
+        }
+
+        /* TITLE */
+
+        body.dark-mode .error-title {
+
+            color: #ffffff;
+        }
+
+        /* DESCRIPTION */
+
+        body.dark-mode .error-text {
+
+            color: #d0d0d0;
+        }
+
+        /* HOME BUTTON */
+
+        body.dark-mode .home-btn {
+
+            background:
+                linear-gradient(135deg,
+                    #2d7065,
+                    #50827a);
+
+            color: #111;
+
+
+        }
+
+        body.dark-mode .home-btn:hover {
+
+            transform: translateY(-4px);
+
+
+        }
+
+        /* BACK BUTTON */
+
+        body.dark-mode .back-home {
+
+            background: #232831;
+
+            color: #f5f5f5;
+
+            border: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        body.dark-mode .back-home:hover {
+
+            background: #2f3641;
+        }
+
+        /* DECORATIVE GOLD GLOW */
+
+        body.dark-mode::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: -1;
+
+            background:
+
+                radial-gradient(circle at 15% 15%,
+                    rgba(212, 175, 55, .08),
+                    transparent 25%),
+
+                radial-gradient(circle at 85% 75%,
+                    rgba(212, 175, 55, .05),
+                    transparent 30%);
+        }
+
+        @media(max-width:768px) {
+
+            .error-card {
+
+                padding: 40px 25px;
+
+            }
+
+            .error-code {
+
+                font-size: 100px;
+
+            }
+
+            .error-title {
+
+                font-size: 32px;
+
+            }
+
+            .buttons {
+
+                flex-direction: column;
+
+            }
+
+            .btn {
+
+                width: 100%;
+
+                justify-content: center;
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="error-card">
+
+        <div class="error-code">404</div>
+
+        <h1 class="error-title">
+            Oops! Page Not Found
+        </h1>
+
+        <p class="error-text">
+            The page you're looking for doesn't exist,
+            may have been moved, or the link is incorrect.
+            Let's get you back to Bloom Skincare.
+        </p>
+
+        <div class="buttons">
+
+            <a href="index.html" class="btn home-btn">
+
+                <i class="fa-solid fa-house"></i>
+
+                Go To Home
+
+            </a>
+
+            <button onclick="history.back()" class="btn back-home">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Previous Page
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        /* LOAD SAVED DARK MODE */
+
+        if (
+            localStorage.getItem("darkMode")
+            === "enabled"
+        ) {
+
+            document.body.classList.add(
+                "dark-mode"
+            );
+
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
