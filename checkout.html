@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
     <!-- ICONS -->
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
@@ -528,6 +528,66 @@ BACK BUTTON
             color: white;
         }
 
+        .success-popup {
+
+            position: fixed;
+            inset: 0;
+
+            background: rgba(0, 0, 0, .6);
+
+            display: none;
+
+            justify-content: center;
+            align-items: center;
+
+            z-index: 9999;
+        }
+
+        .success-popup.show {
+            display: flex;
+        }
+
+        .popup-content {
+
+            background: white;
+
+            padding: 40px;
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            max-width: 400px;
+
+            width: 90%;
+        }
+
+        .popup-content i {
+
+            font-size: 70px;
+
+            color: #1E4D45;
+
+            margin-bottom: 15px;
+        }
+
+        .popup-content button {
+
+            margin-top: 20px;
+
+            padding: 14px 30px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            background: var(--primary);
+
+            color: white;
+
+            cursor: pointer;
+        }
+
         /* FOOTER */
 
         footer {
@@ -659,6 +719,229 @@ BACK BUTTON
             min-width: 240px;
         }
 
+        /* ===================================
+DARK MODE - CHECKOUT PAGE
+=================================== */
+
+        body.dark-mode {
+
+
+            background:
+                linear-gradient(rgba(54, 52, 52, 0.92),
+                    rgba(61, 60, 60, 0.92)),
+                url("https://i.pinimg.com/1200x/0f/f2/b2/0ff2b26fa88eefac050751a1a84832cf.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            color: #f5f5f5;
+        }
+
+        /* HERO */
+
+        body.dark-mode .checkout-hero {
+
+            background:
+                linear-gradient(rgba(0, 0, 0, .75),
+                    rgba(0, 0, 0, .75)),
+                url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1400&auto=format&fit=crop");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* MAIN CARDS */
+
+        body.dark-mode .checkout-left,
+        body.dark-mode .checkout-right {
+
+            background: rgba(20, 20, 20, .88);
+
+            border: 1px solid rgba(255, 255, 255, .08);
+
+            color: #fff;
+        }
+
+        /* HEADINGS */
+
+        body.dark-mode h2,
+        body.dark-mode h3,
+        body.dark-mode h4 {
+
+            color: #fff;
+        }
+
+        body.dark-mode p,
+        body.dark-mode span,
+        body.dark-mode label {
+
+            color: #cfcfcf;
+        }
+
+        /* FORM INPUTS */
+
+        body.dark-mode input,
+        body.dark-mode select {
+
+            background: #181818;
+
+            border: 1px solid #333;
+
+            color: #fff;
+        }
+
+        body.dark-mode input::placeholder {
+
+            color: #888;
+        }
+
+        /* STEPS */
+
+        body.dark-mode .step {
+
+            color: #888;
+        }
+
+        body.dark-mode .step.active {
+
+            color: #4b9387;
+        }
+
+        body.dark-mode .step.active::after {
+
+            background: #4b9387;
+        }
+
+        /* SHIPPING */
+
+        body.dark-mode .shipping-option,
+        body.dark-mode .payment-option {
+
+            background: #181818;
+
+            border: 1px solid #333;
+        }
+
+        body.dark-mode .shipping-option.active,
+        body.dark-mode .payment-option.active {
+
+            background: rgba(212, 180, 114, .08);
+
+            border: 2px solid #4b9387;
+        }
+
+        /* REVIEW */
+
+        body.dark-mode .review-box {
+
+            background: #181818;
+
+            color: #fff;
+        }
+
+        /* SUMMARY */
+
+        body.dark-mode .summary-row {
+
+            color: #cfcfcf;
+        }
+
+        body.dark-mode .summary-total {
+
+            border-top: 1px solid #333;
+
+            color: #fff;
+        }
+
+        /* ORDER ITEMS */
+
+        body.dark-mode .checkout-item {
+
+            border-bottom: 1px solid #333;
+        }
+
+        body.dark-mode .checkout-item strong {
+
+            color: #4b9387;
+        }
+
+        /* BUTTONS */
+
+        body.dark-mode .back-shopping-btn {
+
+            background: #1f1f1f;
+
+            color: #4b9387;
+        }
+
+        body.dark-mode .back-shopping-btn:hover {
+
+            background: #4b9387;
+
+            color: #111;
+        }
+
+        body.dark-mode .backs-btn {
+
+            background: #252525;
+
+            color: #fff;
+        }
+
+        body.dark-mode .backs-btn:hover {
+
+            background: #4b9387;
+
+            color: #111;
+        }
+
+        body.dark-mode .next-btn,
+        body.dark-mode .place-order-btn {
+
+            background: linear-gradient(135deg,
+                    #2d7065,
+                    #50827a);
+
+            color: #111;
+        }
+
+        /* FOOTER */
+
+        body.dark-mode footer {
+
+            background: #111;
+        }
+
+        body.dark-mode .footer-box a,
+        body.dark-mode .footer-box p,
+        body.dark-mode .footer-bottom {
+
+            color: #bdbdbd;
+        }
+
+        body.dark-mode .footer-social a {
+
+            background: #222;
+
+            color: #fff;
+        }
+
+        /* SUCCESS POPUP */
+
+        body.dark-mode .popup-content {
+
+            background: #181818;
+
+            color: #fff;
+        }
+
+        body.dark-mode .popup-content button {
+
+            background: #4b9387;
+
+            color: #111;
+        }
 
         @media (max-width: 991px) {
 
@@ -1335,7 +1618,7 @@ SMALL MOBILE
                 Your order has been placed successfully.
             </p>
 
-            <button onclick="goHome()">
+            <button onclick="window.location.href='shop.html'">
                 Continue Shopping
             </button>
 
