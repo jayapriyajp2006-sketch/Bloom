@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Terms & Conditions</title>
-    <link rel="stylesheet" href="style.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -276,6 +276,173 @@ BUTTONS
             transform: translateY(-4px);
         }
 
+        body.dark-mode {
+            background:
+                linear-gradient(rgba(12, 14, 18, .92),
+                    rgba(12, 14, 18, .92)),
+                url("https://i.pinimg.com/1200x/38/24/34/382434f5f6836b54865b318787d50171.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            color: #f5f5f5;
+        }
+
+        /* MAIN CARD */
+
+        body.dark-mode .terms-card {
+
+            background: rgba(24, 28, 34, .88);
+
+            backdrop-filter: blur(20px);
+
+            border: 1px solid rgba(212, 175, 55, .12);
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, .45);
+        }
+
+        /* TITLE */
+
+        body.dark-mode .terms-title h1 {
+
+            color: #63ada0;
+
+            text-shadow:
+                0 0 20px rgba(212, 175, 55, .15);
+        }
+
+        body.dark-mode .terms-title p {
+
+            color: #bdbdbd;
+        }
+
+        /* SECTION HEADINGS */
+
+        body.dark-mode .section h2 {
+
+            color: #47897e;
+
+            border-left: 4px solid #1E4D45;
+
+            padding-left: 12px;
+        }
+
+        /* CONTENT */
+
+        body.dark-mode .section p {
+
+            color: #d8d8d8;
+
+            line-height: 2;
+        }
+
+        /* SECTION SEPARATION */
+
+        body.dark-mode .section {
+
+            padding-bottom: 25px;
+
+            margin-bottom: 25px;
+
+            border-bottom:
+                1px solid rgba(255, 255, 255, .06);
+        }
+
+        body.dark-mode .section:last-child {
+
+            border-bottom: none;
+        }
+
+        /* BACK BUTTON */
+
+        body.dark-mode .top-back-btn {
+
+            background: #232831;
+
+            color: #1E4D45;
+
+            border: 1px solid rgba(212, 175, 55, .15);
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, .3);
+        }
+
+        body.dark-mode .top-back-btn:hover {
+
+            background: #1E4D45;
+
+            color: #111;
+        }
+
+        /* AGREE BUTTON */
+
+        body.dark-mode .agree-btn {
+
+            background:
+                linear-gradient(135deg,
+                    #1E4D45,
+                    #598f86);
+
+            color: #111;
+
+        }
+
+        body.dark-mode .agree-btn:hover {
+
+            transform: translateY(-4px);
+
+
+        }
+
+        /* DENY BUTTON */
+
+        body.dark-mode .deny-btn {
+
+            background: #232831;
+
+            color: #f5f5f5;
+
+            border: 1px solid rgba(255, 255, 255, .08);
+
+            box-shadow: none;
+        }
+
+        body.dark-mode .deny-btn:hover {
+
+            background: #a53b3b;
+
+            color: white;
+
+            border-color: #a53b3b;
+        }
+
+        /* GOLD GLOW EFFECT */
+
+        body.dark-mode::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: -1;
+
+            background:
+
+                radial-gradient(circle at 15% 15%,
+                    rgba(212, 175, 55, .06),
+                    transparent 25%),
+
+                radial-gradient(circle at 85% 75%,
+                    rgba(212, 175, 55, .05),
+                    transparent 30%);
+        }
+
         /* ===================================
 MOBILE
 =================================== */
@@ -316,8 +483,9 @@ MOBILE
         body.dark-mode {
 
             background:
-                linear-gradient(rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
+
+                linear-gradient(rgba(8, 10, 14, .78),
+                    rgba(8, 10, 14, .78)),
 
                 url("https://i.pinimg.com/1200x/38/24/34/382434f5f6836b54865b318787d50171.jpg");
 
@@ -325,7 +493,7 @@ MOBILE
             background-position: center;
             background-attachment: fixed;
 
-            color: #fff;
+            color: #f5f5f5;
         }
     </style>
 
