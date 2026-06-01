@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
     <!-- ICONS -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -28,8 +28,8 @@ ROOT
             --bg: #f7f4ef;
             --card: #ffffff;
 
-            --text: #111;
-            --light: #666;
+            --text: #111111;
+            --light-text: #666;
 
             --primary: #1E4D45;
             --gold: #c8a96b;
@@ -463,6 +463,238 @@ EMPTY
         .empty p {
 
             color: #666;
+        }
+
+        /* ===================================
+LUXURY CART DARK MODE
+=================================== */
+
+        body.dark-mode {
+
+
+
+            background:
+                linear-gradient(rgba(54, 52, 52, 0.92),
+                    rgba(61, 60, 60, 0.92)),
+                url("https://i.pinimg.com/1200x/0f/f2/b2/0ff2b26fa88eefac050751a1a84832cf.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            color: #f5f5f5;
+        }
+
+        /* HERO */
+
+        body.dark-mode .cart-hero {
+
+            background:
+                linear-gradient(rgba(255, 255, 255, 0.75),
+                    rgba(255, 255, 255, 0.75)),
+                url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1400&auto=format&fit=crop");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        body.dark-mode .hero-content h1 {
+
+            color: #4b9387;
+        }
+
+        body.dark-mode .hero-content p {
+
+            color: #d0d0d0;
+        }
+
+        /* BACK BUTTON */
+
+        body.dark-mode .back-btn {
+
+            background: rgba(22, 26, 32, .95);
+
+            color: #4b9387;
+
+            border: 1px solid rgba(212, 175, 55, .15);
+        }
+
+        body.dark-mode .back-btn:hover {
+
+            background: #4b9387;
+
+            color: #111;
+        }
+
+        /* CART ITEMS */
+
+        body.dark-mode .cart-items {
+
+            background: rgba(20, 24, 30, .82);
+
+            backdrop-filter: blur(20px);
+
+            border: 1px solid rgba(212, 175, 55, .12);
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, .45);
+        }
+
+        body.dark-mode .cart-item {
+
+            border-bottom:
+                1px solid rgba(255, 255, 255, .08);
+        }
+
+        body.dark-mode .cart-item img {
+
+            border: 1px solid rgba(212, 175, 55, .15);
+        }
+
+        /* PRODUCT INFO */
+
+        body.dark-mode .product-info h3 {
+
+            color: #ffffff;
+        }
+
+        body.dark-mode .product-info p {
+
+            color: #c9c9c9;
+        }
+
+        body.dark-mode .price {
+
+            color: #4b9387;
+        }
+
+        /* QUANTITY */
+
+        body.dark-mode .quantity button {
+
+            background: #4b9387;
+
+            color: #111;
+        }
+
+        body.dark-mode .quantity span {
+
+            color: #fff;
+        }
+
+        /* REMOVE BUTTON */
+
+        body.dark-mode .remove-btn {
+
+            background: #b93f55;
+        }
+
+        /* SUMMARY */
+
+        body.dark-mode .summary {
+
+            background: rgba(20, 24, 30, .88);
+
+            backdrop-filter: blur(20px);
+
+            border: 1px solid rgba(212, 175, 55, .12);
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, .45);
+        }
+
+        body.dark-mode .summary h2 {
+
+            color: #fff;
+        }
+
+        body.dark-mode .summary-row {
+
+            color: #f0f0f0;
+        }
+
+        body.dark-mode .summary-row.total {
+
+            border-top:
+                1px solid rgba(255, 255, 255, .08);
+        }
+
+        body.dark-mode .tax {
+
+            color: #c9c9c9;
+        }
+
+        body.dark-mode .free {
+
+            color: #fff;
+        }
+
+        body.dark-mode .savings {
+
+            color: #4b9387;
+        }
+
+        /* CHECKOUT BUTTON */
+
+        body.dark-mode .checkout-btn {
+
+            background:
+                linear-gradient(135deg,
+                    #2d7065,
+                    #50827a);
+
+            color: #111;
+
+            font-weight: 700;
+        }
+
+        body.dark-mode .checkout-btn:hover {
+
+            transform: translateY(-4px);
+
+
+        }
+
+        /* EMPTY CART */
+
+        body.dark-mode .empty i {
+
+            color: #4b9387;
+        }
+
+        body.dark-mode .empty h2 {
+
+            color: #ffffff;
+        }
+
+        body.dark-mode .empty p {
+
+            color: #c9c9c9;
+        }
+
+        /* GOLD AMBIENT GLOW */
+
+        body.dark-mode::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: -1;
+
+            background:
+
+                radial-gradient(circle at 15% 15%,
+                    rgba(212, 175, 55, .08),
+                    transparent 25%),
+
+                radial-gradient(circle at 85% 75%,
+                    rgba(212, 175, 55, .05),
+                    transparent 30%);
         }
 
         /* ===================================
