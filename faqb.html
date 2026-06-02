@@ -517,6 +517,18 @@ FAQ DARK MODE
 
         });
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+
+        document.body.classList.add("dark-mode");
+
+    }
+
+});
+
     </script>
     <script src="script.js"></script>
 </body>
