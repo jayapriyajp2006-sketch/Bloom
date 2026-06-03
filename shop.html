@@ -8,7 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Advanced Luxury Shop</title>
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="bloom2.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="bloom2.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="bloom2.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="bloom2.png">
+    <link rel="shortcut icon" href="bloom2.png">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -93,9 +98,9 @@
         display: flex;
 
         align-items: center;
-
+        justify-content: center;
         position: relative;
-
+        text-align: center;
         overflow: hidden;
 
         background:
@@ -107,13 +112,20 @@
 
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     .hero-content {
 
-        max-width: 650px;
+        max-width: 1000px;
 
         color: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0 auto;
     }
 
     .hero-content span {
@@ -143,7 +155,7 @@
 
         background: #e6c17f;
 
-        margin-bottom: 30px;
+        margin: 0 auto 30px;
     }
 
     .hero-content p {
@@ -631,6 +643,214 @@
     }
 
     /* ===================================
+   AUTO SCROLL OFFER BAR
+=================================== */
+
+    .offer-ticker {
+
+        width: 100%;
+
+        overflow: hidden;
+
+        background: #1E4D45;
+
+        padding: 18px 0;
+
+        position: relative;
+    }
+
+    .ticker-track {
+
+        display: flex;
+
+        width: max-content;
+
+        animation: scrollOffers 25s linear infinite;
+    }
+
+    .offer-item {
+
+        color: white;
+
+        font-size: 15px;
+
+        font-weight: 600;
+
+        letter-spacing: 1px;
+
+        white-space: nowrap;
+
+        margin-right: 80px;
+    }
+
+    @keyframes scrollOffers {
+
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    .offer-slider {
+        padding: 80px 8%;
+    }
+
+    .slider-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 40px;
+    }
+
+    .slides {
+        display: flex;
+
+        transition: transform .8s ease;
+
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        height: 550px;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .slide img {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+
+        transform: none;
+    }
+
+    .slide::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background:
+            linear-gradient(to right,
+                rgba(0, 0, 0, .88) 0%,
+                rgba(0, 0, 0, .70) 45%,
+                rgba(0, 0, 0, .45) 100%);
+
+        z-index: 1;
+    }
+
+    .slide-content {
+        position: absolute;
+        top: 50%;
+        left: 80px;
+        transform: translateY(-50%);
+        max-width: 550px;
+        z-index: 2;
+        color: #fff;
+    }
+
+    .slide-content span {
+        color: #d4b06a;
+        letter-spacing: 3px;
+        font-size: 14px;
+    }
+
+    .slide-content h2 {
+
+        font-size: 70px;
+
+        line-height: 1.05;
+
+        margin: 20px 0;
+
+        font-family: 'Cormorant Garamond', serif;
+
+        text-shadow:
+            0 4px 20px rgba(0, 0, 0, .7);
+    }
+
+
+    .slide-content p {
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        color: rgba(255, 255, 255, .92);
+        text-shadow:
+            0 2px 10px rgba(0, 0, 0, .7);
+    }
+
+    .offer-btn {
+        display: inline-block;
+        padding: 15px 35px;
+        background: #1E4D45;
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .offer-btn:hover {
+        background: #d4b06a;
+        color: #111;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .4);
+    }
+
+    .dot.active {
+        background: #fff;
+    }
+
+    @media (max-width: 480px) {
+
+        .slide {
+            height: 380px;
+        }
+
+        .slide-content {
+
+            left: 20px;
+            right: 20px;
+        }
+
+        .slide-content h2 {
+
+            font-size: 32px;
+        }
+
+        .slide-content p {
+
+            font-size: 14px;
+        }
+
+        .dot {
+
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    /* ===================================
         DARK MODE
         =================================== */
 
@@ -971,7 +1191,49 @@ MOBILE SEARCH POPUP
         </div>
 
     </section>
+    <!-- ===================================
+     AUTO SCROLL OFFERS
+=================================== -->
 
+    <section class="offer-ticker">
+
+        <div class="ticker-track">
+
+            <div class="offer-item">
+                🎁 Buy 2 Get 1 Free
+            </div>
+
+            <div class="offer-item">
+                🚚 Free Shipping Over $50
+            </div>
+
+            <div class="offer-item">
+                🌿 100% Natural Ingredients
+            </div>
+
+            <div class="offer-item">
+                ✨ Flat 20% Off Luxury Collection
+            </div>
+
+            <div class="offer-item">
+                🎁 Buy 2 Get 1 Free
+            </div>
+
+            <div class="offer-item">
+                🚚 Free Shipping Over $50
+            </div>
+
+            <div class="offer-item">
+                🌿 100% Natural Ingredients
+            </div>
+
+            <div class="offer-item">
+                ✨ Flat 20% Off Luxury Collection
+            </div>
+
+        </div>
+
+    </section>
     <!-- ===================================
     SHOP
     =================================== -->
@@ -1378,7 +1640,66 @@ MOBILE SEARCH POPUP
         </div>
 
     </div>
+    <section class="offer-slider">
 
+        <div class="slider-container">
+
+            <div class="slides">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="https://i.pinimg.com/736x/30/0a/6c/300a6c06c89f2806883afd595839f952.jpg">
+                    <div class="slide-content">
+                        <span>LIMITED OFFER</span>
+                        <h2>30% OFF Skincare Collection</h2>
+                        <p>Glow naturally with premium botanicals.</p>
+
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="https://i.pinimg.com/736x/6e/8e/fd/6e8efd9f49edf61efce3f8e4e73e046f.jpg">
+                    <div class="slide-content">
+                        <span>NEW ARRIVAL</span>
+                        <h2>Luxury Body Butter</h2>
+                        <p>Deep hydration for silky smooth skin.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="https://i.pinimg.com/736x/bd/61/e5/bd61e5d766964ba6b1c412147759aef1.jpg">
+                    <div class="slide-content">
+                        <span>BEST SELLER</span>
+                        <h2>Handcrafted Soap</h2>
+                        <p>Purify and refresh your skin naturally.</p>
+
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <img src="https://i.pinimg.com/1200x/31/f3/8a/31f38a3f9a1a444459b70ab293e7d782.jpg">
+                    <div class="slide-content">
+                        <span>EXCLUSIVE DEAL</span>
+                        <h2>Buy 2 Get 1 Free</h2>
+                        <p>Special offer on selected skincare products.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+
+    </section>
     <!-- ===================================
      FOOTER
 =================================== -->
@@ -1856,6 +2177,35 @@ MOBILE SEARCH POPUP
 
         });
 
+
+        const slides = document.querySelector('.slides');
+        const dots = document.querySelectorAll('.dot');
+
+        let current = 0;
+
+        function showSlide(index) {
+
+            slides.style.transform =
+                `translateX(-${index * 100}%)`;
+
+            dots.forEach(dot =>
+                dot.classList.remove('active')
+            );
+
+            dots[index].classList.add('active');
+        }
+
+        setInterval(() => {
+
+            current++;
+
+            if (current >= 4) {
+                current = 0;
+            }
+
+            showSlide(current);
+
+        }, 4000);
 
     </script>
     <script src="script.js"></script>
