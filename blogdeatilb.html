@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Blog Details - Bloom</title>
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="bloom2.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="bloom2.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="bloom2.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="bloom2.png">
+    <link rel="shortcut icon" href="bloom2.png">
     <!-- GOOGLE FONT -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -20,18 +28,85 @@
 
 <body>
 
+    <!-- NAVBAR -->
+
+    <header>
+
+        <div class="logo">
+            Bloom
+        </div>
+
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="index2b.html">Home 2</a>
+            <a href="shop.html">Shop</a>
+            <a href="aboutusb.html">About Us</a>
+            <a href="blogb.html">Blog</a>
+            <a href="contactb.html">Contact</a>
+        </nav>
+
+        <div class="nav-icons">
+            <!-- DESKTOP SEARCH -->
+
+            <div class="search-box desktop-search">
+
+                <input type="text" id="searchInput" placeholder="Search products...">
+
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <!-- MOBILE SEARCH ICON -->
+
+            <button class="mobile-search-btn" id="mobileSearchBtn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <!-- DARK MODE BUTTON -->
+
+            <button id="darkModeBtn" class="dark-mode-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <!-- HAMBURGER -->
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+
+
+
+    </header>
+    <!-- ===================================
+MOBILE SEARCH POPUP
+=================================== -->
+
+    <div class="mobile-search-popup" id="mobileSearchPopup">
+
+        <div class="mobile-search-content">
+
+            <input type="text" id="mobileSearchInput" placeholder="Search products...">
+
+            <button id="mobileSearchSubmit">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+    </div>
     <!-- ===================================
        BLOG DETAIL HERO
     ==================================== -->
 
     <section class="blog-detail-hero">
-        <a href="blogb.html" class="back-btn" style="position: absolute;">
 
-            <i class="fa-solid fa-arrow-left"></i>
-
-            Back to Blogs
-
-        </a>
         <div class="blog-detail-overlay"></div>
 
         <div class="blog-detail-content">
@@ -233,6 +308,134 @@
         </div>
 
     </section>
+
+    <!-- ===================================
+     FOOTER
+=================================== -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <!-- FOOTER ABOUT -->
+
+            <div class="footer-box">
+
+                <div class="logo">
+                    Bloom
+                </div>
+
+                <p>
+                    Handcrafted skincare inspired by nature.
+                    Made with pure ingredients for a healthy,
+                    glowing you.
+                </p>
+
+                <div class="footer-social">
+
+                    <!-- INSTAGRAM -->
+
+                    <a href="https://instagram.com">
+
+                        <i class="ri-instagram-line"></i>
+
+                    </a>
+
+                    <!-- FACEBOOK -->
+
+                    <a href="https://facebook.com">
+
+                        <i class="ri-facebook-line"></i>
+
+                    </a>
+
+                    <!-- PINTEREST -->
+
+                    <a href="https://pinterest.com">
+
+                        <i class="ri-pinterest-line"></i>
+
+                    </a>
+
+                    <!-- TIKTOK -->
+
+                    <a href="https://tiktok.com">
+
+                        <i class="ri-tiktok-line"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- SHOP -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="index2b.html">Home 2</a>
+                <a href="shop.html">Shop</a>
+                <a href="aboutusb.html">About Us</a>
+                <a href="blogb.html">Blog</a>
+                <a href="contactb.html">Contact</a>
+
+
+
+            </div>
+
+            <!-- COMPANY -->
+
+            <div class="footer-box">
+
+                <h3>Support</h3>
+
+                <a href="faqb.html">FAQs</a>
+                <a href="privacypolicy.html">Privacy & Policy</a>
+                <a href="terms&con.html">Teams & conditions</a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="ri-mail-line"></i>
+                    bloom@gmail.com
+                </p>
+
+                <p>
+                    <i class="ri-phone-line"></i>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    <i class="ri-map-pin-line"></i>
+                    Chennai, Tamil Nadu
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Bloom Skincare.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
     <script src="script.js"></script>
 </body>
 
