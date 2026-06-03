@@ -491,19 +491,18 @@ mobileSearchInput.addEventListener(
     }
 );
 
-// FAQ ACCORDION
 
-const faqItems = document.querySelectorAll(".faqs-item");
+// FAQ PAGE
+const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
 
-    const btn = item.querySelector(".faqs-question");
+    const btn = item.querySelector(".faq-question");
 
-    btn.addEventListener("click", () => {
-
-        item.classList.toggle("active");
-
-    });
+    if (btn) {
+        btn.addEventListener("click", () => {
+            item.classList.toggle("active");
+        });
+    }
 
 });
-
