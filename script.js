@@ -490,6 +490,25 @@ mobileSearchInput.addEventListener(
 
     }
 );
+document.addEventListener("DOMContentLoaded", () => {
+
+    const faqsItems =
+        document.querySelectorAll(".faqs-item");
+
+    faqsItems.forEach(item => {
+
+        const btn =
+            item.querySelector(".faqs-question");
+
+        btn.addEventListener("click", () => {
+
+            item.classList.toggle("active");
+
+        });
+
+    });
+
+});
 
 
 
