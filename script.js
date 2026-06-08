@@ -492,20 +492,7 @@ mobileSearchInput.addEventListener(
 );
 
 
-// FAQ PAGE
-const faqItems = document.querySelectorAll(".faq-item");
 
-faqItems.forEach(item => {
-
-    const btn = item.querySelector(".faq-question");
-
-    if (btn) {
-        btn.addEventListener("click", () => {
-            item.classList.toggle("active");
-        });
-    }
-
-});
 /* FAQ PAGE */
 
 const faqsItems = document.querySelectorAll(".faqs-item");
