@@ -493,22 +493,4 @@ mobileSearchInput.addEventListener(
 
 
 
-/* FAQ PAGE */
 
-const faqsItems = document.querySelectorAll(".faqs-item");
-
-faqsItems.forEach(item => {
-
-    const btn = item.querySelector(".faqs-question");
-
-    if (btn) {
-
-        btn.addEventListener("click", () => {
-
-            item.classList.toggle("active");
-
-        });
-
-    }
-
-});
